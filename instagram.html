@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 150px; 
+}
+
+.search-bar i {
+  margin-left: 5px;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-icons i {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./Instagram.webp" alt="Instagram Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-paper-plane"></i>
+            <i class="fas fa-compass"></i>
+            <i class="fas fa-heart"></i>            
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+</body>

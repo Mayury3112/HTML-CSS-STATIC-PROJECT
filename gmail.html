@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-sidebar i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.gmail-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 5px;
+}
+
+.name {
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 50px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    cursor: pointer;
+}
+
+.right-icons i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="left-sidebar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="gmail-info">
+            <img src="./Gmail.png" alt="Gmail Logo" class="logo">
+            <span class="name">Gmail</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Mail">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="right-icons">
+            <i class="fas fa-question-circle"></i>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-th"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+</body>
+</html>
